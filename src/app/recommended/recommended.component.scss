@@ -117,8 +117,10 @@
         grid-template-columns: auto;
         grid-template-rows: 1vh auto min-content min-content var(--extra-height);
         grid-template-areas: 
-        'containerLL containerL' 
-        'containerR containerRR';
+        'containerLL'
+        'containerL' 
+        'containerR' 
+        'containerRR';
         background-color: black;
     }
 

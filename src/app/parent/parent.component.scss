@@ -1,8 +1,7 @@
 .parent{
-    //background-color: aqua;
     background-color: #494946;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .container{
@@ -31,7 +30,6 @@ app-profile{
     grid-area: profileDiv;
     justify-self: center;
     margin-bottom: 20px;
-
 }
 
 app-added-song{
@@ -71,4 +69,20 @@ app-top-bar{
     grid-area: topBox;
     margin-bottom: 20px;
 
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        grid-template-columns: auto;
+        grid-template-rows: 1vh auto min-content min-content var(--extra-height);
+        grid-template-areas:
+        'topBox topBox topBox topBox'
+        'title title title title'
+        'profileDiv profileDiv profileDiv profileDiv'
+        'emotion emotion emotion emotion'
+        'upvotes upvotes upvotes upvotes'
+        'addSongs addSongs addSongs addSongs'
+        'recTitle recTitle recTitle recTitle' 
+        'rec rec rec rec';
+    }
 }
