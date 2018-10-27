@@ -1,0 +1,100 @@
+.container{
+    display: grid;
+    background-color: #ede92d;
+    width: 400px;
+    height: 150px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'containerLeft containerRight';
+}
+
+.containerLeft{
+    display: grid;
+    grid-area: containerLeft;
+    // align-content: center;
+    // justify-content: center;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    'song1Img'
+    'song2Img'
+    'song3Img';
+}
+.song1Img{
+    display: grid;
+    grid-area: song1Img;
+}
+
+.song2Img{
+    display: grid;
+    grid-area: song2Img;
+}
+
+.song3Img{
+    display:grid;
+    grid-area: song3Img;
+}
+
+.containerRight{
+    display: grid;
+    grid-area: containerRight;
+    grid-template-rows: auto;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    'song1Name song1Name'
+    'song1Artist song1Artist'
+    'song2Name song2Name'
+    'song2Artist song2Artist'
+    'song3Name song3Name'
+    'song3Artist song3Artist';
+    
+}
+
+.song1Name{
+    display: grid;
+    grid-area: song1Name;
+    background-color: aqua;
+    align-content: center;
+    justify-content: center;
+}
+
+.song1Artist{
+    display: grid;
+    grid-area: song1Artist;
+    background-color: wheat;
+    align-content: center;
+    justify-content: center;
+}
+
+.song2Name{
+    display: grid;
+    grid-area: song2Name;
+    background-color: aqua;
+    align-content: center;
+    justify-content: center;
+}
+
+.song2Artist{
+    display: grid;
+    grid-area: song2Artist;
+    background-color: wheat;
+    align-content: center;
+    justify-content: center;
+}
+
+.song3Name{
+    display: grid;
+    grid-area: song3Name;
+    background-color: aqua;
+    align-content: center;
+    justify-content: center;
+}
+
+.song3Artist{
+    display: grid;
+    grid-area: song3Artist;
+    background-color: wheat;
+    align-content: center;
+    justify-content: center;
+}

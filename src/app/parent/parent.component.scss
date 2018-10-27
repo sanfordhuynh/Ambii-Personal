@@ -1,0 +1,74 @@
+.parent{
+    //background-color: aqua;
+    background-color: #494946;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    'topBox topBox topBox topBox'
+    'title title title title'
+    'profileDiv profileDiv emotion emotion'
+    'upvotes upvotes upvotes upvotes'
+    'addSongs addSongs addSongs addSongs'
+    'recTitle recTitle recTitle recTitle' 
+    'rec rec rec rec';
+}
+
+app-title{
+    grid-area: title;
+    justify-self: center;
+    height: 25%;
+    margin-bottom: 20px;
+}
+app-profile{
+    grid-area: profileDiv;
+    justify-self: center;
+    margin-bottom: 20px;
+
+}
+
+app-added-song{
+    grid-area: addSongs;
+    justify-self: center;
+    margin-bottom: 20px;
+
+}
+
+app-recommended{
+    grid-area: rec;
+    justify-self: center;
+    margin-bottom: 20px;
+
+}
+
+app-upvoted-song{
+    grid-area: upvotes;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+app-emotion{
+    grid-area: emotion;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+app-recommendation-title{
+    grid-area: recTitle; 
+    justify-self: center;
+    margin-bottom: 20px;
+
+}
+
+app-top-bar{
+    grid-area: topBox;
+    margin-bottom: 20px;
+
+}

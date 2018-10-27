@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    background-color: #7cc466;
+    align-content: center;
+    justify-content: center;
+    width: 500px;
+    height: 80px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'title'
+    'Sub-Message';
+}
+
+.title{
+    grid-area: title;
+    display: grid;
+    font-weight: bold;
+}
+
+.Sub-Message{
+    grid-area: Sub-Message;
+    display: grid;
+}

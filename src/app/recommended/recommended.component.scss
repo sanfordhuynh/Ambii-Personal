@@ -1,0 +1,161 @@
+.container{
+    display: grid;
+    background-color:#7a42f4;
+    width: 80vw;
+    height: 150px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'containerLL containerL containerR containerRR';
+}
+
+.containerLL{
+    display: grid;
+    grid-area: containerLL;
+    background-color: aquamarine;
+    margin: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'song1Img'
+    'song1Name'
+    'song1Author';
+}
+
+.song1Img{
+    display:grid;
+    grid-area: song1Img;
+}
+.song1Name{
+    display:grid;
+    grid-area: song1Name;
+}
+.song1Author{
+    display: grid;
+    grid-area: song1Author;
+}
+
+.containerL{
+    display: grid;
+    grid-area: containerL;
+    background-color: saddlebrown;
+    margin: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'song2Img'
+    'song2Name'
+    'song2Author';
+}
+.song2Img{
+    display:grid;
+    grid-area: song2Img;
+}
+.song2Name{
+    display:grid;
+    grid-area: song2Name;
+}
+.song2Author{
+    display: grid;
+    grid-area: song2Author;
+}
+
+.containerR{
+    display: grid;
+    grid-area: containerR;
+    background-color: rosybrown;
+    margin: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'song3Img'
+    'song3Name'
+    'song3Author';
+}
+
+.song3Img{
+    display:grid;
+    grid-area: song3Img;
+}
+.song3Name{
+    display:grid;
+    grid-area: song3Name;
+}
+.song3Author{
+    display: grid;
+    grid-area: song3Author;
+}
+
+.containerRR{
+    display: grid;
+    grid-area: containerRR;
+    background-color: springgreen;
+    margin: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'song4Img'
+    'song4Name'
+    'song4Author';
+}
+
+.song4Img{
+    display:grid;
+    grid-area: song4Img;
+}
+.song4Name{
+    display:grid;
+    grid-area: song4Name;
+}
+.song4Author{
+    display: grid;
+    grid-area: song4Author;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        grid-template-columns: auto;
+        grid-template-rows: 1vh auto min-content min-content var(--extra-height);
+        grid-template-areas: 
+        'containerLL containerL' 
+        'containerR containerRR';
+        background-color: black;
+    }
+
+    // .containerLL{
+    //     grid-template-columns: 20%;
+    //     grid-template-rows: 3vh auto min-content min-content var(--extra-height);
+    //     grid-template-areas: 
+    //     'song1Img'
+    //     'song1Name'
+    //     'song1Author';
+    //     background-color: yellow;
+    // }
+
+    // .containerL{
+    //     grid-template-columns: auto;
+    //     grid-template-rows: 2vh auto min-content min-content var(--extra-height);
+    //     grid-template-areas: 
+    //     'song2Img'
+    //     'song2Name'
+    //     'song2Author';
+    // }
+
+    // .containerR{
+    //     grid-template-columns: auto;
+    //     grid-template-rows: 2vh auto min-content min-content var(--extra-height);
+    //     grid-template-areas: 
+    //     'song3Img'
+    //     'song3Name'
+    //     'song3Author';
+    // }
+
+    // .containerRR{
+    //     grid-template-columns: auto;
+    //     grid-template-rows: 2vh auto min-content min-content var(--extra-height);
+    //     grid-template-areas: 
+    //     'song4Img'
+    //     'song4Name'
+    //     'song4Author';
+    // }
+}
