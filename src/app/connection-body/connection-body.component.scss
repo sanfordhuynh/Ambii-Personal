@@ -1,0 +1,80 @@
+.container{
+    display: grid;
+    //background-color: #ede92d;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'form'
+    'connectMedia';
+    width: 80%;
+    margin: 0 auto
+    
+}
+
+.form{
+    display: grid;
+    background-color: brown;
+    grid-area: form;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    '. . username . '
+    '. . password .'
+    '. . button . ';
+    width: 80%;
+    margin: 0 auto;
+}
+
+.username{
+    display:grid;
+    background-color: palevioletred;
+    grid-area: username;
+    width: 20%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.password{
+    display: grid;
+    background-color: paleturquoise;
+    grid-area: password;
+    width: 20%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: grid;
+    grid-area: button;
+    width: 15%;
+    justify-content: center;
+    background-color: yellow;
+    margin-left: 20px;
+}
+
+.connectMedia{
+    display: grid;
+    //background-color: aquamarine;
+    grid-area: connectMedia;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    'facebook'
+    'google';
+    width: 25%;
+    justify-self: center;
+    margin-top: 5%;
+}
+
+.connectFacebook{
+    display: grid;
+    grid-area: facebook;
+    justify-self: center;
+    margin-bottom: 5%;
+}
+
+.connectGoogle{
+    display: grid;
+    grid-area: google;
+    justify-self: center;
+}

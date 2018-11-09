@@ -1,0 +1,61 @@
+.container{
+    background-color: aquamarine;
+    display: grid;
+    width: 100vw;
+    grid-template-rows: 10% 20% 40% 20%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'ambii'
+    'largeText'
+    'textDisplay'
+    'button';
+    font-weight: bold;
+}
+
+.ambii{
+    display: grid;
+    grid-area: ambii;
+    // width: 50%;
+    //height: 20%;
+    //background-color: rosybrown;
+    justify-content: center;
+    align-content: center;
+    font-size: 200%;
+}
+
+.largeText{
+    display: grid;
+    grid-area: largeText;
+    // width: 70%;
+    //height: 70%;
+    //background-color: gold;
+    justify-content: center;
+    align-content: center;
+    font-size: 350%;
+}
+
+.textDisplay{
+    display: grid;
+    // width: 70%;
+    grid-area: textDisplay;
+    //background-color:greenyellow;
+    justify-content: center;
+    align-content: center;
+    font-size: 200%;
+}
+
+.button{
+    display: grid;
+    grid-area: button;
+    background-color: bisque;
+    justify-content: center;
+    align-content: center;
+    font-size: 150%;
+    height: 80%;
+    width: 20%;
+    border-radius: 50%;
+    justify-self: center;
+    //display:inline-block;
+    border: 1px solid black;
+    
+}

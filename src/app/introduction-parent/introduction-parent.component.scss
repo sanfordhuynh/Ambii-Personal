@@ -1,0 +1,35 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 30% 60% 10%;
+    grid-template-areas: 
+    'headerComponent'
+    'introduction'
+    'footer';
+}
+
+app-header{
+    display: grid;
+    grid-area: headerComponent;
+    justify-self: center;
+}
+
+app-introduction{
+    display: grid;
+    grid-area: introduction;
+    justify-self: center;
+}
+
+app-footer{
+    display: grid;
+    grid-area: footer;
+    justify-self: center;
+
+}

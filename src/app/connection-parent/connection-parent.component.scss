@@ -1,0 +1,28 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    background-color: black;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: auto;
+    grid-template-areas:
+    'headerComponent'
+    'body';
+}
+
+app-header{
+    display: grid;
+    grid-area: headerComponent;
+    justify-self: center;
+}
+
+app-body{
+    display: grid;
+    grid-area: body;
+    justify-self: center;
+}

@@ -1,0 +1,22 @@
+.container{
+    display: grid;
+    background-color: pink;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'logo signup';
+}
+
+.logo{
+    display: grid;
+    grid-area: logo;
+    //background-color: goldenrod;
+    justify-content: end;
+}
+
+.signUp{
+    display: grid;
+    grid-area: signup;
+    //background-color: hotpink;
+    justify-content: end;
+}
